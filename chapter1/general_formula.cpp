@@ -1,5 +1,5 @@
 /*
-                            Carlos Theran
+                            Carlos Theran-Suarez
                               COP3330-301
     This program will find the roots of a quatric function
 */
