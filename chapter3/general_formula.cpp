@@ -23,18 +23,21 @@ class QuadraticPolinomial
 
    public:
     QuadraticPolinomial(){};
+    ~QuadraticPolinomial(){};
     QuadraticPolinomial(double value1, double value2, double value3)
     {
       a = value1;
       b = value2;
       c = value3;
     }
+
     void general_formula();
     double evaluate(double x);
     void vertex();
     void set_a(double value);
     void set_b(double value);
     void set_c(double value);
+    void evaluation(double x_value[], double y_value[], int leng);
     double get_a();
     double get_b();
     double get_c(); 
@@ -46,7 +49,7 @@ class QuadraticPolinomial
 
 int main()
 {
-   double value1 =0.0, value2=0.0, value3=0.0;
+   double value1 =4, value2=6, value3=7;
    double x_values[] = {2, 3, 4, 6, 7, -4};
    double y_values[6] = {};
    int leng = 6;
@@ -54,28 +57,28 @@ int main()
    string answer2 = "yes";
 
    QuadraticPolinomial poly1;
+   QuadraticPolinomial poly2(value1, value2, value3);
 
-
+   poly1.set_a(leng);
    cout<<poly1.get_a()<<endl;
    cout<<poly2.get_a()<<endl;
-  
-   // while(answer == answer2)
-   // {
-   //    cout<<"Please provide the coefficient of your quadratic equation"<<endl;
-   //    cin>> value1 >> value2 >> value3;
+   while(answer == answer2)
+   {
+      cout<<"Please provide the coefficient of your quadratic equation"<<endl;
+      cin>> value1 >> value2 >> value3;
 
-   //    poly1.set_a(value1);
-   //    poly1.set_b(value2);
-   //    poly1.set_c(value3);
+      poly1.set_a(value1);
+      poly1.set_b(value2);
+      poly1.set_c(value3);
 
-   //    poly1.general_formula();
-   //    poly1.evaluation(x_values, y_values, leng);
-   //    poly1.vertex();
-   //    cout<<"\nDo you want to keep using the APP? ";
-   //    cin >> ws;
-   //    getline(cin,answer);
+      poly1.general_formula();
+      poly1.evaluation(x_values, y_values, leng);
+      poly1.vertex();
+      cout<<"\nDo you want to keep using the APP? ";
+      cin >> ws;
+      getline(cin,answer);
       
-   // } 
+   } 
 
    return 0; 
 }
