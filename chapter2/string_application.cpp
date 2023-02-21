@@ -17,6 +17,7 @@ using namespace std;
 void print_by_name(string name[], string id[], string phone[], int num_clients);
 int print_by_id(string name[], string id[], string phone[], int num_clients);
 void print_by_phone(string name[], string id[], string phone[], int num_clients);
+void edit_name(string name[], string id[], string phone[], int num_clients);
 
 int main()
 {
