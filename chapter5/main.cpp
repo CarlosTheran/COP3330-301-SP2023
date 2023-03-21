@@ -1,3 +1,5 @@
+/*For mac you need to compile the code using the following command g++ -std=c++11 main.cpp */
+
 #include <iostream>
 #include <string>
 
