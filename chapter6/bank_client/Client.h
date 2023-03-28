@@ -1,3 +1,6 @@
+//g++ -c bank_client/application_bank.cpp bank_client/application_client.cpp array_of_object.cpp
+//
+
 #include <iostream>
 #include <string>
 #include <stdio.h>
