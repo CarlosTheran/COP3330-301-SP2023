@@ -28,9 +28,11 @@
 
 # Executables
 *.exe
+*.exec
 *.out
 *.app
 
 # json and txt files
 *.json
 *.vscode
+*.txt
